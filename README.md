@@ -106,6 +106,11 @@ If a Hash is passed instead of an array, it takes the Hash values.
 Coerce the value into a Float, or nil of the value can't be coerced into a
 float.
 
+### :big_decimal
+
+Coerce the value into a BigDecimal, or nil of the value can't be coerced into a
+BigDecimal.
+
 ### :hash
 
 Coerces the value into a Hash. If it can't be coerced into a Hash, it returns

@@ -1,4 +1,5 @@
 require "date"
+require "bigdecimal"
 
 module Organ
   module Coercer
@@ -73,6 +74,17 @@ module Organ
     # @api semipublic
     def coerce_float(value, options = {})
       Float(value) rescue nil
+    end
+
+    # Coerce the value into a BigDecimal.
+    #
+    # @param value [Object]
+    #
+    # @return [BigDecimal, nil]
+    #
+    # @api semipublic
+    def coerce_big_decimal(value, options = {})
+      BigDecimal(value) rescue nil
     end
 
     # Coerce the value into a Hash.
